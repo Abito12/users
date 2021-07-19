@@ -15,6 +15,8 @@ const Users = ({user, handleLogOut}) => {
     const handleAddUser = () => {
         // Validate before adding
         UserApi.addUser({...formData});
+        alert('User added');
+        setFormData({});
     };
 
     return (
